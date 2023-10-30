@@ -6,6 +6,10 @@
     font-family: 'Public Sans', sans-serif;
     overflow-x: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color:rgb(15, 15, 15);
 
@@ -34,6 +38,10 @@ header > ul > li {
 a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #800080;
 }
 
 #firstpage {
@@ -91,6 +99,7 @@ button {
     border: none;
     margin: 3% 0 0 0;
     font-size: 1em;
+    cursor: pointer;
 }
 
 #bolc {
@@ -188,7 +197,7 @@ button {
     height: 2px;
     background-color: #800080;
     rotate: 90deg;
-    margin-left: 47%;
+    margin-left: 46.5%;
 }
 
 #bicontent > p{
@@ -212,5 +221,118 @@ button {
 }
 
 #thirdpage{
-
+    width: 100vw;
+    height: auto;
 }
+
+.cardHline{
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.cardH{
+    width: 28%;
+    height: 100%;
+    background-color: rgb(29, 29, 29);
+    transition: background-color 0.4s ease;
+}
+
+.cardH:hover {
+    background-color: #800080;
+    
+}
+.cardH:hover p{
+    color: white;
+    
+}
+
+.cardH > p{
+    color: gray;
+    transition: color 0.4s ease;
+}
+
+
+.cardportline{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+    overflow-y: hidden;
+}
+
+
+
+
+.cardport {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.cardport img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+   
+width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+   
+opacity: 0;
+    display: flex;
+    
+   
+justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.zoomed-box {
+    width: 0;
+    height: 0;
+    background-color: rgba(128, 128, 128, 0.438);
+    opacity: 0;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+    justify-content: center;
+    text-align: center;
+}
+
+.zoomed-box >  h1{
+    color: #800080;
+    margin-top: 40%;
+}
+.zoomed-box > p{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+.cardport:hover img {
+    transform: scale(1.1);
+}
+
+.cardport:hover .overlay {
+    opacity: 1;
+}
+
+.cardport:hover .zoomed-box {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
