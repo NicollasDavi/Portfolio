@@ -40,7 +40,7 @@
                         Full Stack Developer
                     </p>
                 </section>
-                <button>Download CV</button>
+                <button onclick="openIframe()">Download CV</button>
             </div>
             <div id="bolc">
                 <section id="bol"></section>
@@ -148,15 +148,14 @@
                 </section>
             </section>
             <section class="cardportline">
-                <section class="cardport">
-                    <img src="calculator.png" alt="Calculator">
-                    <div class="overlay">
-                        <div class="zoomed-box">
+                <section class="cardport" onclick="openIframe()">
+                    <img src="calculator.png" alt="Calculator" onclick="openIframe()">
+                    <div class="overlay" onclick="openIframe()">
+                        <div class="zoomed-box" onclick="openIframe()">
                             <h1>JAVASCRIPT</h1>
                             <p>JAVASCRIPT CALCULATOR</p>
                         </div>
                     </div>
-                
                 </section>
                 <section class="cardport">
                     <img src="calculator.png" alt="Calculator">
@@ -166,6 +165,7 @@
                             <p>JAVASCRIPT CALCULATOR</p>
                         </div>
                     </div>
+                
                 </section>
                 <section class="cardport">
                     <img src="calculator.png" alt="Calculator">
@@ -226,7 +226,10 @@
                 
                 </section>            
             </section>
-            
+            <div id="iframeContainer">
+                <button id="iframeClose" onclick="closeIframe()">fechar</button>
+                <iframe src="https://nicollasdavi.github.io/Projects/"></iframe>
+            </div>
         </div>
     </main>
     <footer>

@@ -11,8 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(15, 15, 15);
-
+    background-color: rgb(7, 7, 7);
 }
 
 header {
@@ -24,14 +23,14 @@ header {
     z-index: 9999;
 }
 
-header > ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     margin-right: 10%;
 }
 
-header > ul > li {
+header ul li {
     margin: 3% 0% 2% 2%;
 }
 
@@ -41,12 +40,16 @@ a {
     transition: color 0.3s ease;
 }
 a:hover{
-    color: #800080;
+    color: #8A2BE2;
 }
 
 #firstpage {
     width: 100%;
     height: 100vh;
+    background-image: url(ft.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 
 #titlecontain {
@@ -57,20 +60,19 @@ a:hover{
     width: 70%;
 }
 span{
-    color: #800080;
+    color: #8A2BE2;
 }
 
 hr {
-    border-color: #800080;
-    background-color: #800080;
+    border-color: #8A2BE2;
+    background-color: #8A2BE2;
     height: 2px;
     width: 4em;
     margin-right: 1em;
     align-self: center;
 }
 
-
-#title > h1 {
+#title h1 {
     font-size: 5em;
 }
 
@@ -85,7 +87,6 @@ hr {
     margin-right: 1em;
 }
 
-
 #mydesc {
     margin-top: 3%;
     font-size: 1.5em;
@@ -94,7 +95,7 @@ hr {
 button {
     width: 15vw;
     height: 10vh;
-    background-color: #800080;
+    background-color: #8A2BE2;
     color: #fff;
     border: none;
     margin: 3% 0 0 0;
@@ -118,16 +119,17 @@ button {
     top: 47%;
 }
 
-
 #secondflex{
     display: flex;
     height: auto;
 }
 
 #secimg{
-    background-color: aquamarine;
     width: 45vw;
     height: 80vh;
+    background-image: url(ft.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 #bicontent{
@@ -154,9 +156,8 @@ button {
     margin-left: 10%;
 }
 
-
 #abm{
-    color: #800080;
+    color: #8A2BE2;
     margin-bottom: 3vh;
     font-size: 1.5em;
     font-weight: 100;
@@ -173,49 +174,48 @@ button {
     background-color: rgb(71, 71, 71);
     margin-top: 4vh;
     border-left: 4px solid rgb(71, 71, 71);
-
 }
-.card > h1{
+
+.card h1{
     margin: 5% 0 0 10%;
     font-size: 1em;
     font-weight: 100;
 }
-.card > p{
+
+.card p{
     margin: 4% 0 0 10%;
     font-size: 1em;
     color: rgb(163, 163, 163);
     font-weight: 100;
-
 }
 
-.line >:hover{
-    border-left: 4px solid #800080;
+.line:hover{
+    border-left: 4px solid #8A2BE2;
 }
 
-#contenthr > hr{
+#contenthr hr{
     width: 7vw;
     height: 2px;
-    background-color: #800080;
+    background-color: #8A2BE2;
     rotate: 90deg;
     margin-left: 46.5%;
 }
 
-#bicontent > p{
+#bicontent p{
     color: gray;
-    margin-bottom: 3vh;    
+    margin-bottom: 3vh;
     margin-top: 7vh;
-
 }
 
-#bicontent > h1{
+#bicontent h1{
     font-size: 3em;
 }
 
-#content > h2{
+#content h2{
     margin-bottom: 3vh;
     font-size: 2em;
 }
-#content > p{
+#content p{
     color: gray;
     font-size: 1.1em;
 }
@@ -241,19 +241,17 @@ button {
 }
 
 .cardH:hover {
-    background-color: #800080;
-    
-}
-.cardH:hover p{
-    color: white;
-    
+    background-color: #8A2BE2;
 }
 
-.cardH > p{
+.cardH:hover p{
+    color: white;
+}
+
+.cardH p{
     color: gray;
     transition: color 0.4s ease;
 }
-
 
 .cardportline{
     width: 100vw;
@@ -263,9 +261,6 @@ button {
     margin-bottom: 5vh;
     overflow-y: hidden;
 }
-
-
-
 
 .cardport {
     position: relative;
@@ -286,18 +281,12 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    
-   
-width: 100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
-   
-opacity: 0;
+    opacity: 0;
     display: flex;
-    
-   
-justify-content: center;
+    justify-content: center;
     align-items: center;
     transition: opacity 0.3s, transform 0.3s;
 }
@@ -305,22 +294,24 @@ justify-content: center;
 .zoomed-box {
     width: 0;
     height: 0;
-    background-color: rgba(128, 128, 128, 0.438);
+    background-color: rgba(82, 82, 82, 0.438);
     opacity: 0;
     transition: width 0.3s, height 0.3s, opacity 0.3s;
     justify-content: center;
     text-align: center;
 }
 
-.zoomed-box >  h1{
-    color: #800080;
+.zoomed-box h1{
+    color: #8A2BE2;
     margin-top: 40%;
 }
-.zoomed-box > p{
+
+.zoomed-box p{
     font-size: 2em;
     font-weight: bold;
     color: #fff;
 }
+
 .cardport:hover img {
     transform: scale(1.1);
 }
@@ -333,6 +324,42 @@ justify-content: center;
     width: 100%;
     height: 100%;
     opacity: 1;
+}
+
+
+#iframeContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    border: none;
+}
+
+#iframeClose {
+    position: absolute;
+    top: 5%;
+    right: 11%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border: none;
 }
 
 

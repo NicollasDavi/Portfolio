@@ -18,6 +18,11 @@ window.addEventListener('scroll', function() {
 
 
 
+function openIframe() {
+    document.getElementById('iframeContainer').style.display = 'block';
+}
 
-
-
+function closeIframe() {
+    const iframeContainer = document.getElementById('iframeContainer');
+    iframeContainer.style.display = 'none';
+}
