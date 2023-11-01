@@ -63,7 +63,7 @@ span{
     color: #8A2BE2;
 }
 
-hr {
+.hr {
     border-color: #8A2BE2;
     background-color: #8A2BE2;
     height: 2px;
@@ -189,7 +189,7 @@ button {
     font-weight: 100;
 }
 
-.line:hover{
+.line>:hover{
     border-left: 4px solid #8A2BE2;
 }
 
@@ -227,7 +227,7 @@ button {
 
 .cardHline{
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5vh;
@@ -236,22 +236,37 @@ button {
 .cardH{
     width: 28%;
     height: 100%;
-    background-color: rgb(29, 29, 29);
+    background-color: #1d1d1d;
     transition: background-color 0.4s ease;
+    text-align: left;
 }
 
 .cardH:hover {
     background-color: #8A2BE2;
 }
 
-.cardH:hover p{
-    color: white;
+h3{
+    color: gray;
+    font-size: 1.1em;
+    font-weight: 100;
+    margin-left: 10%;
+    margin-top: 5%;
+    line-height: 1.5em;
 }
 
-.cardH p{
-    color: gray;
-    transition: color 0.4s ease;
+.cardH:hover h3{
+    color: #fff;
 }
+
+.cardH h1 {
+    color: #fff;
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
 
 .cardportline{
     width: 100vw;
@@ -261,6 +276,7 @@ button {
     margin-bottom: 5vh;
     overflow-y: hidden;
 }
+
 
 .cardport {
     position: relative;
@@ -326,7 +342,19 @@ button {
     opacity: 1;
 }
 
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
+
+  
 #iframeContainer {
     position: fixed;
     top: 0;
@@ -340,6 +368,8 @@ button {
     z-index: 9999;
     overflow: hidden;
     border: none;
+    animation: zoomIn 0.5s ease;
+    transform-origin: center center;
 }
 
 #iframeClose {
@@ -361,5 +391,78 @@ iframe {
     height: 80%;
     border: none;
 }
+
+
+.cardH .icon img {
+    width: 13%; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.cardH .icon img.purple {
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.cardH .icon img.white {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+
+}
+
+.cardH:hover .icon img.purple {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+
+}
+
+.cardH:hover .icon img.white {
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #8A2BE2;
+    width: 2vw;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10%;
+}
+
+.cardH:hover .line {
+    border-color: #fff;
+    margin-left: 10vw;
+}
+
+.read-more-text {
+    position: absolute;
+    left: 50px;
+    opacity: 0;
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cardH:hover .read-more-text {
+    opacity: 1;
+}
+
+
 
 
