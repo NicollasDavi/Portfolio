@@ -2,7 +2,7 @@ import styles from "./Contact.module.css"
 
 const Contact = () => {
     return (
-        <div id="contact">
+        <div id="contact" className={styles.contact}>
             <p className={styles.BeforeTitle}>Informações de contato</p>
             <div className={styles.title}>
                 <h1>Entrar em contato</h1>

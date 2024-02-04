@@ -1,6 +1,11 @@
+.contact{
+    padding-bottom: 20%;
+}
+
 .title{
     text-align: center;
     margin: 0 0 50px 0;
+    color: #fff;
 }
 
 .BeforeTitle{
@@ -11,7 +16,7 @@
 
 .form{
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .form section{
@@ -20,7 +25,7 @@
 }
 
 .flex section{
-    width: 46%;
+    width: 47%;
 }
 
 .input{
@@ -34,7 +39,7 @@
 }
 
 textarea{
-    height: 100px;
+    height: 200px;
 }
 .input::placeholder{
     color: rgb(170, 141, 170);
