@@ -1,0 +1,99 @@
+.title{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.BeforeTitle{
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: darkgray;
+}
+
+.form{
+    margin: auto;
+    width: 50%;
+}
+
+.form section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex section{
+    width: 46%;
+}
+
+.input{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    margin-bottom: 15px;
+    
+    padding: 20px 20px;
+    color: #fff;
+}
+
+textarea{
+    height: 100px;
+}
+.input::placeholder{
+    color: rgb(170, 141, 170);
+    margin: 2px 0 0 2px;
+}
+
+.input:focus {
+    border-color: purple; 
+    box-shadow: 5px 5px 5px purple;
+    transform: scale(1.01);
+    outline: 1px solid purple;
+  }
+
+
+
+@media (min-width: 300px) and (max-width: 428px){
+    
+    .title{
+        text-align: center;
+        margin: 10px 0 50px 0;
+    }
+    
+    .form{
+        margin: auto;
+        width: 80%;
+    }
+    
+    .form section{
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .flex section{
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        border: none;
+        margin-bottom: 15px;
+        
+        padding: 20px 20px;
+        color: #fff;
+    }
+    
+    textarea{
+        height: 100px;
+    }
+    .input::placeholder{
+        color: rgb(170, 141, 170);
+        margin: 2px 0 0 2px;
+    }
+    
+    .input::focus{
+        border-color: #000000;
+    }
+    
+    
+    
+}
+

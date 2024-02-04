@@ -1,0 +1,121 @@
+
+.cont{
+    height: 60vh;
+}
+.center{
+    margin-top: 20vh;
+}
+
+.hay{
+    display: flex;
+}
+
+.hay h1{
+    font-size: 7em;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.hay span{
+    color: purple;
+}
+
+.name {
+    display: flex;
+}
+
+.name h3{
+    font-size: 3em;
+    color: #fff;
+}
+
+.name span{
+    color: purple;
+    margin-right: 10px;
+    font-size: xx-large;
+    margin-top: 0;
+}
+
+
+
+.about{
+    font-size: 2em;
+    color: #fff;
+}
+
+button{
+    font: 1.5em;
+    background-color: purple;
+    border: none;
+    padding: 20px 60px 20px 60px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    margin: 20px 10px 30px 5px;
+    color: #fff;
+}
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .cont{
+        height: 50vh;
+    }
+    .center{
+        margin-top: 10vh;
+    }
+    
+    .hay{
+        display: flex;
+    }
+    
+    .hay h1{
+        font-size: 2em;
+        color: #fff;
+        margin-left: 10px;
+    }
+    
+    .hay span{
+        color: purple;
+    }
+    
+    .name {
+        display: flex;
+    }
+    
+    .name h3{
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    .name span{
+        display: none;
+    }
+    
+    
+    
+    .about{
+        font-size: 1.3em;
+        color: #fff;
+    }
+    
+    button{
+        font: 1.5em;
+        background-color: purple;
+        border: none;
+        padding: 20px 60px 20px 60px;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    
+    .icon{
+        width: 25px;
+        height: 25px;
+        margin: 20px 10px 30px 5px;
+        color: #fff;
+    }
+    
+}
