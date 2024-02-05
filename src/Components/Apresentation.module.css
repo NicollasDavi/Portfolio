@@ -69,6 +69,14 @@ button{
 
 
 @media (min-width: 300px) and (max-width: 500px) {
+    .home{
+        background-image: url("../Assets/homft.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
     .cont{
         height: 50vh;
     }
