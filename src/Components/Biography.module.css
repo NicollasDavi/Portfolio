@@ -14,10 +14,12 @@ h1, h2, h3, p{
     justify-content: space-around;
 }
 
-img{
+.img{
     width: 200px;
     height: 250px;
-    background-color: #fff;
+    background-image: url("../Assets/Mf.png");
+    background-color: #343434;
+    margin: auto;
 }
 
 .me{

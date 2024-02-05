@@ -19,8 +19,7 @@ const Biography = () => {
             </div>
             <div className={styles.aboutContain}>
                 <div className={styles.me}>
-                    <section >
-                        <img src="" alt="" className=''/>
+                    <section className={styles.img}>
                     </section>
                     <section>
                         <h1>Nicollas Davi</h1>

@@ -6,7 +6,7 @@ import {SiGithub } from "react-icons/si";
 
 const Apresentation = () => {
     return (
-        <div id='home'>
+        <div id='home' className={styles.home}>
             <div className={styles.cont}>
                 <div className={styles.center}>
                     <div className={styles.hay}>
