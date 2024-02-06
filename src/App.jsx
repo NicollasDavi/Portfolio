@@ -1,15 +1,15 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { Outlet } from 'react-router-dom'
 import Header from './Components/Navbar'
-import Home from './routes/Home';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <div className="container">
-        <Home />
+        <Outlet />
       </div>
       
     </div>
