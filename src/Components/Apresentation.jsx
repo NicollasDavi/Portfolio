@@ -21,8 +21,8 @@ const Apresentation = () => {
                         <p>Desenvolvedor Full-Stack</p>
                     </div>
                     <div className={styles.iconsL}>
-                        <a href=""><FaLinkedin  className={styles.icon}/></a>
-                        <a href="https://github.com/NicollasDavi"><SiGithub className={styles.icon}/></a>
+                        <a href="https://www.linkedin.com/in/nicollas-davi-85958b27a/" target="_blank" rel="noopener noreferrer"><FaLinkedin  className={styles.icon}/></a>
+                        <a href="https://github.com/NicollasDavi" target="_blank" rel="noopener noreferrer"><SiGithub className={styles.icon}/></a>
                         
                     </div>
                     <div>

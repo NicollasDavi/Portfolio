@@ -1,3 +1,4 @@
+import AreaCards from "./AreaCards"
 import styles from "./Projects.module.css"
 
 
@@ -9,7 +10,7 @@ const Projects = () => {
                 <section></section>
             </div>
             <div>
-
+                <AreaCards />
             </div>
         </div>
     )
