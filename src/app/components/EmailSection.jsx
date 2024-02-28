@@ -54,10 +54,10 @@ const EmailSection = () => {
           Atualmente estou em busca de novas oportunidades, minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/NicollasDavi">
+          <Link href="https://github.com/NicollasDavi" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://linkedin.com/in/nicollasdavi">
+          <Link href="https://linkedin.com/in/nicollasdavi" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
