@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Front-End"
-          isSelected={tag === "Front-End"}
+          name="Front"
+          isSelected={tag === "Front"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Back-End"
-          isSelected={tag === "Back-End"}
+          name="Back"
+          isSelected={tag === "Back"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
