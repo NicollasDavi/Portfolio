@@ -5,15 +5,15 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "React Portfolio Website",
-  //   description: "Project 1 description",
-  //   image: "/images/projects/1.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+  {
+    id: 1,
+    title: "Google Drive Upload files",
+    description: "Api para Uploads de imagens no Drive, com a utilização de GoogleApi",
+    image: "/images/projects/googleDrive.png",
+    tag: ["All","Back"],
+    gitUrl: "https://github.com/NicollasDavi/CloudStorageAPI",
+    previewUrl: "https://github.com/NicollasDavi/CloudStorageAPI",
+  },
   // {
   //   id: 2,
   //   title: "Potography Portfolio Website",
@@ -87,8 +87,8 @@ const ProjectsSection = () => {
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="Todos"
-          isSelected={tag === "Todos"}
+          name="All"
+          isSelected={tag === "All"}
         />
         <ProjectTag
           onClick={handleTagChange}
