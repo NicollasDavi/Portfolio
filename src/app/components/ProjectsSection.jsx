@@ -21,7 +21,7 @@ const projectsData = [
     image: "/images/projects/mvflix.png",
     tag: ["All", "Front"],
     gitUrl: "https://github.com/NicollasDavi/movieflix_react_vite",
-    previewUrl: "https://movieflix-plum.vercel.app/movie/1046090",
+    previewUrl: "https://movieflix-plum.vercel.app/",
   },
   // {
   //   id: 3,
